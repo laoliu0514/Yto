@@ -3,6 +3,7 @@ package com.dl.pojo;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.lang.reflect.Field;
+import java.net.URLConnection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -29,6 +30,9 @@ public class YtoUtils {
 	
 	
 	public static void pushOrderMsgHttp(Message message){
+		
+		
+		
 		//1.生成发送给圆通的XML文件
 		Element root=DocumentHelper.createElement("Message");
 		Document document=DocumentHelper.createDocument(root);
